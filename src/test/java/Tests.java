@@ -31,7 +31,7 @@ public class Tests {
         Rational r = new Rational(num, den);
         Rational r1 = new Rational(num, den);
         assertTrue("Is not equal", r1.lessOrEqual(r));
-        num = num -1;
+        num = num -1; //уменьшаем числитель на 1, чтобы проверить, что дробь стала меньше и проверка все еще срабатывает
         Rational r2 = new Rational(num, den);
         assertTrue("Is not less", r2.lessOrEqual(r));
     }
