@@ -92,7 +92,7 @@ public class Tests {
             Rational r = new Rational(2, 0);
         }
         catch (ArithmeticException e) {
-            assertTrue(true);
+            assertEquals("Wrong error", "division by zero !", e.getMessage());
         }
     }
 
@@ -104,7 +104,7 @@ public class Tests {
             Rational r = r1.divide(r2);
         }
         catch (ArithmeticException e) {
-            assertTrue(true);
+            assertEquals("Wrong error", "division by zero !", e.getMessage());
         }
     }
 }
